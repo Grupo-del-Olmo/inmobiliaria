@@ -1,0 +1,84 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 1em;
+  background-color: lightgray;
+  font: 200 16px/125% "KoHo", "Helvetica Neue", "Arial", sans-serif;
+  color: gray; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: 400 32px/125% "Oswald", "Helvetica Neue", "Arial", sans-serif; }
+
+footer {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: .5em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 2em; }
+
+body {
+  color: #59463b; }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #a60321; }
+
+.logo {
+  background-image: url("https://storage.googleapis.com/delolmo-public/brand/resources/GDO-escudo-web.svg");
+  background-repeat: no-repeat;
+  width: auto;
+  /*or your image's width*/
+  height: auto;
+  /*or your image's height*/
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  background-position: center; }
+
+.subheading {
+  font-weight: 200; }
+
+header {
+  margin-top: 10vh; }
+  header h1, header #logo, header menu {
+    width: 100%; }
+  header #logo {
+    height: 30vh; }
+  header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #59463b;
+    line-height: .75em;
+    margin-top: -.25em;
+    font-size: 2.25em; }
+    header h1 span {
+      font-size: .5em; }
+
+hr#headspacer {
+  margin: 10vh; }
+
+menu#servicios {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  menu#servicios ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+    menu#servicios ul li {
+      font-size: .75em;
+      list-style: none;
+      padding: .5em 1.5em;
+      text-align: center;
+      color: gray; }
+
+/*# sourceMappingURL=style.css.map */

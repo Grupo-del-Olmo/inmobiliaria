@@ -1,0 +1,75 @@
+// estilos generales destinados al contexto
+// especifico de este desarrollo
+@import 'marca';
+
+body{
+  color:$ocre-gdo;
+};
+
+a:-webkit-any-link{
+  text-decoration: none;
+  color:$rojo-gdo;
+}
+
+.logo{
+  @include logo;
+}
+
+.subheading{
+  font-weight: 200;
+}
+
+header{
+  margin-top: 10vh;
+
+  h1, #logo, menu{
+    width: 100%;
+  }
+  #logo{
+    height: 30vh;
+    //background-color: gray;
+  }
+
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: $ocre-gdo;
+    line-height: .75em;
+    margin-top: -.25em;
+    font-size: 2.25em;
+
+
+    span{
+      font-size: .5em;
+    }
+  }
+}
+
+hr#headspacer{margin:10vh;}
+
+menu#servicios{
+width: 100%;
+margin: 0;
+padding: 0;
+
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li{
+      font-size: .75em;
+      list-style: none;
+      //border-right:1px solid gray;
+      padding: .5em 1.5em;
+      text-align: center;
+      color:gray;
+    }
+    //li:last-child {border-right:0;}
+  }
+}

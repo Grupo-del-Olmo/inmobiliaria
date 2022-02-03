@@ -1,0 +1,17 @@
+// marca del Olmo
+
+@mixin logo{
+  background-image: url("https://storage.googleapis.com/delolmo-public/brand/resources/GDO-escudo-web.svg");
+  background-repeat: no-repeat;
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  background-position: center;
+}
+
+@mixin typomarca{
+  text-transform: capitalize;
+  font-weight: 400;
+}

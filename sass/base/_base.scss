@@ -1,0 +1,30 @@
+//estilos básicos
+@import 'colores';
+@import 'fuentes';
+
+html {
+  width: 100%;
+  height:100%;
+}
+
+body{
+  margin: 1em;
+  background-color: lightgray;
+
+  //definiciones tipográficas
+  font: $font-body;
+  color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {font:$font-headings;}
+
+footer{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: .5em;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 2em;
+}

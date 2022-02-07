@@ -1,9 +1,13 @@
 // estilos generales destinados al contexto
 // especifico de este desarrollo
 @import 'marca';
+$marfil-gdo: #efefea;
+$grisobscuro-gdo: #666666;
+$carbon-gdo: #3c3a36;
 
 body{
-  color:$ocre-gdo;
+  background-color: $marfil-gdo;
+  color: $grisobscuro-gdo;
 };
 
 a:-webkit-any-link{
@@ -20,24 +24,28 @@ a:-webkit-any-link{
 }
 
 header{
-  margin-top: 10vh;
+  background-color: $rojo-gdo;
+  top: 0;
+  margin: -1em;
+  padding-top: 1.5em;
 
   h1, #logo, menu{
     width: 100%;
   }
   #logo{
+    //margin-top: 10vh;
     height: 30vh;
     //background-color: gray;
   }
 
   h1{
+    color: $marfil-gdo;
     text-align: center;
     text-transform: uppercase;
-    color: $ocre-gdo;
     line-height: .75em;
     margin-top: -.25em;
     font-size: 2.25em;
-
+    padding-bottom: 3vh;
 
     span{
       font-size: .5em;
@@ -71,5 +79,52 @@ padding: 0;
       color:gray;
     }
     //li:last-child {border-right:0;}
+  }
+}
+
+section#listado-portada {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  article{
+    margin-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+
+    figure{
+      margin: 0;
+      width: 100%;
+      height: 30vh;
+      overflow: hidden;
+      position: relative;
+
+      img{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    h2{
+      margin: 0;
+      margin-top: 0.25em;
+      font-size: 1.5em;
+      color: $ocre-gdo;
+    }
+
+    h3{
+      margin: 0;
+      //margin-top: 0.25em;
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    p{
+      margin-top: .5em;
+    }
+
   }
 }
